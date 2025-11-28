@@ -198,10 +198,13 @@ p, .formative-study ul li, .iteration-container ul li, .showcase-li {
   // t, r, b, l
   padding: 32px 36px 32px 36px;
 
-  #research-link-icon {
+  .link-icon-wrapper {
     position: absolute;
     top: 12px;
     right: 12px;
+  }
+
+  #research-link-icon {
     width: calc(var(--dynamic-font-size));
     height: calc(var(--dynamic-font-size));
   }
@@ -210,9 +213,25 @@ p, .formative-study ul li, .iteration-container ul li, .showcase-li {
     cursor: pointer;
   }
 
+  .a-title {
+    text-decoration: none;
+    color: inherit;
+    
+    &:link,
+    &:visited {
+      color: inherit;
+    }
+    
+    &:hover,
+    &:active {
+      color: inherit;
+    }
+  }
+
   .r-title {
     font-weight: $bold;
     font-size: calc(var(--dynamic-font-size) * 0.9);
+    text-decoration: none;
   }
   .r-title:hover {
     text-decoration: underline;
